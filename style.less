@@ -1,0 +1,107 @@
+/* LESS Document */
+@color: rgba(7,122,10,1.00);
+
+@font_color: #dcdcdc;
+@grey: #606060 ;
+
+@rgba_0: rgba(7,122,10,0);
+@rgba_1: rgba(7,122,10,1);
+@font: Gotham, "Helvetica Neue", Helvetica, Arial, 		  			sans-serif;
+@radius: 5px;
+
+
+#content {
+	clear: left;
+	float:left;
+	min-width: 900px;
+	min-height: 50px;
+
+}
+
+#box {
+	padding: 5px;
+	min-height: 200px;
+	width: 300px;
+	float: left;
+	display: inline;
+	border-right: 2px solid @color;
+		
+			
+}
+
+
+
+.button1 {
+min-height: 50px;
+min-width: 100px;
+background-color: @color;	
+font-family:@font;
+color: #fff;
+text-transform:uppercase;
+border-radius: 5px;
+
+}
+
+.button2{
+	.button1;
+	float: right;
+}
+.button3{
+	.button2;
+	
+	}
+	
+.button_click {
+background-color: @color;
+}
+
+input {
+	height: 25px;
+	width: 80px;
+	border-radius: @radius;
+}
+	
+#list {
+	height: 30px;
+	width: 120px;
+	border-radius: @radius;
+}
+#footer {
+	float: left;
+	min-height: 50px;
+	width:935px;
+	background: -webkit-linear-gradient(left, @rgba_0, @rgba_1); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, @rgba_0, @rgba_1); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, @rgba_0, @rgba_1); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, @rgba_0, @rgba_1); 	
+}
+
+p {
+	font-family: @font;
+	color: @font_color;
+}
+	
+p .article {
+	font-size: 8px;
+	text-align: center;
+}
+	
+
+
+p.submenu {
+  color: @color;
+	font-size: 16px;
+}
+
+p.select {
+	font-size: 12px;
+	color: @color;
+	}
+
+h1 {
+	font-family: @font;
+	color: @color;
+	}
+ 
+
+
